@@ -1,0 +1,40 @@
+// Заголовки, общие БЄМ блоки и проче...
+.page {
+   // .page__main
+   &__main {
+   }
+   // .page__help
+   &__help {
+   }
+   // .page__goodmasters
+   &__goodmasters {
+   }
+}
+//===========================
+ .title-h1 {
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 60px;
+   line-height: 127%;
+   text-transform: uppercase;
+   color: $whiteColor;
+ }
+ .title-h2 {
+   font-family: 'Gilroy';
+   font-style: normal;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 123%;
+   text-align: center;
+   color: $mainColor;
+   text-align: center;
+ }
+ .title-h3 {
+   font-family: 'Proxima Nova';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 121%;
+   text-align: center;
+ }

@@ -1,0 +1,121 @@
+/* help */
+.help {
+   @include adaptiveValue("padding-top", 70, 40);
+   @include adaptiveValue("padding-bottom", 35, 20);
+   // .help__container
+   &__container {
+   }
+   // .help__body
+   &__body {
+   }
+   // .help__header
+   &__header {
+      position: relative;
+      padding-bottom: rem(30);
+   }
+   // .help__title
+   &__title {
+      margin-bottom: rem(20);
+   }
+   // .help__desc
+   &__desc {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 122%;
+      text-align: center;
+      margin-bottom: rem(20);
+   }
+   // .help__double-arrow
+   &__double-arrow {
+      text-align: center;
+   }
+   // .help__phone
+   &__phone {
+      position: absolute;
+      top: -40px;
+      right: 0;
+
+   }
+   // .help__items
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(20);
+   }
+   // .help__item
+   &__item {
+      background-color: $lightBlue2Color;
+      padding: 30px 20px 0 30px;
+      width: 100%;
+      border-radius: 3px;
+   }
+}
+.item-help {
+   // .item-help__title
+   &__title {
+      margin-bottom: rem(34);
+   }
+   // .item-help__inner
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   // .item-help__content
+   &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: rem(30);
+   }
+   // .item-help__defect
+   &__defect {
+   }
+   // .item-help__more
+   &__more {
+      display: flex;
+      align-items: center;
+   }
+   // .item-help__link
+   &__link {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 122%;
+      color: $lightBlueColor;
+      text-transform: uppercase;
+      margin-right: rem(10);
+   }
+   // .item-help__more-arrow
+   &__more-arrow {
+      display: flex;
+      align-items: center;
+   }
+   // .item-help__image
+   &__image {
+      display: flex;
+      align-items: center;
+   }
+}
+.defect-help {
+   // .defect-help__list
+   &__list {
+   }
+   // .defect-help__item
+   &__item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 122%;
+      position: relative;
+      padding-left: rem(17);
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translate(0, -50%);
+         width: 7px;
+         height: 7px;
+         border-radius: 1px;
+         background-color: $lightBlueColor;
+      }
+   }
+}
