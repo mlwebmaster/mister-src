@@ -9,6 +9,9 @@
    // .page__goodmasters
    &__goodmasters {
    }
+   // .page__sayaboutus
+   &__sayaboutus {
+   }
 }
 //===========================
  .title-h1 {
@@ -29,6 +32,7 @@
    text-align: center;
    color: $mainColor;
    text-align: center;
+   margin-bottom: rem(20);
  }
  .title-h3 {
    font-family: 'Proxima Nova';
@@ -37,4 +41,15 @@
    font-size: 24px;
    line-height: 121%;
    text-align: center;
+ }
+ .desc-block {
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 120%;
+   text-align: center;
+   margin-bottom: rem(20);
+ }
+ .arrow-double {
+   text-align: center;
+   margin-bottom: rem(30);
  }

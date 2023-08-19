@@ -1,0 +1,86 @@
+/* sayaboutus */
+.sayaboutus {
+   @include adaptiveValue("padding-top", 35, 20);
+   @include adaptiveValue("padding-bottom", 35, 20);
+   // .sayaboutus__container
+   &__container {
+      border-left: 1px solid red;
+      border-right: 1px solid red;
+   }
+   // .sayaboutus__body
+   &__body {
+   }
+   // .sayaboutus__header
+   &__header {
+   }
+   // .sayaboutus__title
+   &__title {
+   }
+   // .sayaboutus__desc
+   &__desc {
+   }
+   // .sayaboutus__arrow
+   &__arrow {
+   }
+   // .sayaboutus__reviews
+   &__reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      grid-gap: 30px 10px;
+      justify-items: center;
+      padding-bottom: rem(30);
+   }
+   // .sayaboutus__inner
+   &__inner {
+      padding: 5px;
+   }
+   // .sayaboutus__images
+   &__images {
+   }
+   // .sayaboutus__image
+   &__image {
+      text-align: center;
+      margin-bottom: rem(15);
+   }
+   // .sayaboutus__name
+   &__name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 121%;
+      //margin-bottom: rem(5);
+   }
+   // .sayaboutus__review
+   &__review {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 121%;
+   }
+   // .sayaboutus__bottom
+   &__bottom {
+      text-align: center;
+   }
+   // .sayaboutus__button
+   &__button {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 114%;
+      color: $whiteColor;
+      background-color: $lightBlueColor;
+      padding: rem(12) rem(20);
+      border-radius: 3px;
+      text-transform: uppercase;
+      @media (any-hover: hover){
+         &:hover{
+            background-color: $darkBlueColor;
+         }
+      }
+   }
+}
+.title-h2 {
+}
+.desc-block {
+}
+.arrow-double {
+}
