@@ -270,7 +270,7 @@
          position: absolute;
          //top: -60px;
          right: 0;
-         //@include adaptiveValue("width", 228, 20);
+         @include adaptiveValue("width", 228, 150, 1270, 992, 2);
          @include adaptiveValue("bottom", -10, -15);
       }
    }
