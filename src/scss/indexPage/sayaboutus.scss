@@ -4,8 +4,6 @@
    @include adaptiveValue("padding-bottom", 35, 20);
    // .sayaboutus__container
    &__container {
-      border-left: 1px solid red;
-      border-right: 1px solid red;
    }
    // .sayaboutus__body
    &__body {
@@ -54,6 +52,10 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 121%;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // количество строк
+      -webkit-box-orient: vertical;
+      overflow: hidden;
    }
    // .sayaboutus__bottom
    &__bottom {

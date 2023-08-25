@@ -1008,9 +1008,11 @@ h6 {
   margin-bottom: 0.625rem;
 }
 
+.no-webp .documents-content__item::before{
+  background: url("./../../img/indexPage/goodmasters/check.png"); }
+
 .documents-content__item::before {
   content: "";
-  background: url("./../../img/indexPage/goodmasters/check.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -1166,11 +1168,6 @@ h6 {
   }
 }
 
-.sayaboutus__container {
-  border-left: 1px solid red;
-  border-right: 1px solid red;
-}
-
 .sayaboutus__reviews {
   display: -ms-grid;
   display: grid;
@@ -1199,6 +1196,10 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 121%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .sayaboutus__bottom {
@@ -1216,6 +1217,95 @@ h6 {
   padding: 0.75rem 1.25rem;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+/* chooseus */
+
+@supports (padding-top: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem )) {
+  .chooseus {
+    padding-top: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem );
+  }
+}
+
+@supports not (padding-top: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem )) {
+  .chooseus {
+    padding-top: calc(1.25rem + 0.9375 * (100vw - 20rem) / 59.375);
+  }
+}
+
+@supports (padding-bottom: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem )) {
+  .chooseus {
+    padding-bottom: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , 0.9342105263rem  +  1.5789473684vw , 2.1875rem )) {
+  .chooseus {
+    padding-bottom: calc(1.25rem + 0.9375 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.chooseus__container {
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+}
+
+.chooseus__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.chooseus__wrap {
+  position: relative;
+}
+
+.chooseus__title3 {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 121%;
+  margin-bottom: 0.8125rem;
+}
+
+.chooseus__text {
+  max-width: 210px;
+  margin-left: 2.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chooseus__bg {
+  position: relative;
+  background: #EDF3F6;
+  min-height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chooseus__bg::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 40px;
+  width: 5px;
+  height: 35px;
+  background: #09D743;
+}
+
+.chooseus__image {
+  position: absolute;
+  content: "";
+  right: 10px;
+  bottom: 0;
 }
 
 .swiper {
@@ -2238,3 +2328,5 @@ button.swiper-pagination-bullet {
     background-color: #1B75BB;
   }
 }
+
+.webp .documents-content__item::before{ background: url(./../../img/indexPage/goodmasters/check.webp); }
